@@ -14,25 +14,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     Iro = math.floor(percentage)
     if 0 < Iro <= 10:
-        bar = "▁▄▂▇▄▅▄▅▃"
+        bar = "◉—————————"
     elif 10 < Iro < 20:
-        bar = "▁▃▇▂▅▇▄▅▃"
+        bar = "—◉————————"
     elif 20 <= Iro < 30:
-        bar = "▃▁▇▂▅▃▄▃▅"
+        bar = "——◉———————"
     elif 30 <= Iro < 40:
-        bar = "▃▄▂▄▇▅▃▅▁"
+        bar = "———◉——————"
     elif 40 <= Iro < 50:
-        bar = "▁▃▄▂▇▃▄▅▃"
+        bar = "————◉—————"
     elif 50 <= Iro < 60:
-        bar = "▁▇▄▂▅▄▅▃▄"
+        bar = "—————◉————"
     elif 60 <= Iro < 70:
-        bar = "▁▃▅▇▂▅▄▃▇"
+        bar = "——————◉———"
     elif 70 <= Iro < 80:
-        bar = "▃▅▂▅▇▁▄▃▁"
+        bar = "———————◉——"
     elif 80 <= Iro < 95:
-        bar = "▇▅▂▅▃▄▃▁▃"
+        bar = "————————◉—"
     else:
-        bar = "▃▇▂▅▁▅▄▃▁"
+        bar = "—————————◉"
 
     buttons = [
         [
@@ -43,26 +43,26 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🦋",
+                text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="🥺", callback_data=f"ADMIN Pause|{chat_id}"
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="❤️", callback_data=f"ADMIN Skip|{chat_id}"
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="🍃", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="💮︎ ᴄᴘᴀɴɴᴇʟ︎",
+                text="➕ ᴩʟᴀʏʟɪsᴛ ➕",
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="💌 𔘓༌ ᴄʟᴏsᴇ 𔘓༌🪽", callback_data="close"
+                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
             )
         ],
     ]
@@ -76,25 +76,25 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     Iro = math.floor(percentage)
     if 0 < Iro <= 10:
-        bar = "▁▄▂▇▄▅▄▅▃"
+        bar = "◉—————————"
     elif 10 < Iro < 20:
-        bar = "▁▃▇▂▅▇▄▅▃"
+        bar = "—◉————————"
     elif 20 <= Iro < 30:
-        bar = "▃▁▇▂▅▃▄▃▅"
+        bar = "——◉———————"
     elif 30 <= Iro < 40:
-        bar = "▃▄▂▄▇▅▃▅▁"
+        bar = "———◉——————"
     elif 40 <= Iro < 50:
-        bar = "▁▃▄▂▇▃▄▅▃"
+        bar = "————◉—————"
     elif 50 <= Iro < 60:
-        bar = "▁▇▄▂▅▄▅▃▄"
+        bar = "—————◉————"
     elif 60 <= Iro < 70:
-        bar = "▁▃▅▇▂▅▄▃▇"
+        bar = "——————◉———"
     elif 70 <= Iro < 80:
-        bar = "▃▅▂▅▇▁▄▃▁"
+        bar = "———————◉——"
     elif 80 <= Iro < 95:
-        bar = "▇▅▂▅▃▄▃▁▃"
+        bar = "————————◉—"
     else:
-        bar = "▃▇▂▅▁▅▄▃▁"
+        bar = "—————————◉"
 
     buttons = [
         [
@@ -105,22 +105,22 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🦋",
+                text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="🥺", callback_data=f"ADMIN Pause|{chat_id}"
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="❤️", callback_data=f"ADMIN Skip|{chat_id}"
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="🍃", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="💌 𔘓༌ ᴄʟᴏsᴇ 𔘓༌🪽", callback_data=f"close"
+                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
     ]
@@ -131,25 +131,25 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🦋",
+                text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="🥺", callback_data=f"ADMIN Pause|{chat_id}"
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="❤️", callback_data=f"ADMIN Skip|{chat_id}"
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="🍃", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="💌 𔘓༌ ᴄʟᴏsᴇ 𔘓༌🪽", callback_data=f"close"
+                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
     ]
