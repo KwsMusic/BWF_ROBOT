@@ -6,7 +6,7 @@
     ──「 Iro X Music 」──
 </h2>
 <p align="center">
-  <img src="https://te.legra.ph/file/7b9bfe8d7fbb2589071e3.jpg">
+  <img src="https://i.postimg.cc/sDtyNnZH/20231123-232120.png">
 </p>
 
 <p align="center">
